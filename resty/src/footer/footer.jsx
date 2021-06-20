@@ -4,7 +4,7 @@ import './footer.scss';
 // create the footer for the app
 const Footer = () =>{
     return(
-        <p>
+        <p className="App-footer">
             &copy; 2021 Code Fellows
         </p>
     );
