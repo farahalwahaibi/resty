@@ -22,7 +22,9 @@ And as developers, here are the high level development tasks that address the ab
 
 ### **Author: Farah AlWahaibi**
 
-[PR LINK](https://github.com/farahalwahaibi/resty/pull/1)
+[PR LINK1](https://github.com/farahalwahaibi/resty/pull/1)
+[PR LINK2](https://github.com/farahalwahaibi/resty/pull/2)
+
 
 
 ### **Installation**
