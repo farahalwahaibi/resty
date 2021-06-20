@@ -1,0 +1,16 @@
+.App-form {
+    height: 100px;
+    text-align: center;
+}
+
+
+.App-result {
+    background-color: rgb(233, 233, 233);
+    min-height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    border: solid lightgray;
+}

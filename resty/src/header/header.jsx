@@ -5,7 +5,7 @@ import './header.scss';
 const Header = () =>{
     return(
         <header>
-            <h1>
+            <h1 className="App-header">
                 RESTy
             </h1>
         </header>
