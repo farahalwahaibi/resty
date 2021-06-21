@@ -82,6 +82,12 @@ Application Flow:
 * [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
 
 
+### **Installation**
+* **dependencies :**
+  *  "react-json-view"
+  *  "react-json-pretty"
+
+
 ## **UML DIAGRAM PHASE-2**
 
 ![UML](2.PNG)
