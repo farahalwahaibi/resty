@@ -1,7 +1,8 @@
 import React from 'react';
 // import the scss style for form
 import './main.scss';
-import JSONPretty from 'react-json-pretty';
+//for rendering data 
+import ReactJson from 'react-json-view';
 
 
 // create class for main
@@ -10,11 +11,11 @@ class Result extends React.Component {
     render() {
       return (
               <div className="App-result">
-                <JSONPretty id="json-pretty" data="Headers : "></JSONPretty>
-                <JSONPretty id="json-pretty" data={this.props.headers}></JSONPretty>
+                <h6>Header :</h6>
+                <ReactJson  src={this.props.headers}  />
                 <br />                  
-                <JSONPretty id="json-pretty" data="Response :"></JSONPretty>
-                <JSONPretty id="json-pretty" data={this.props.response}></JSONPretty>
+                <h6>Response :</h6>
+                <ReactJson src={this.props.response}  />
               </div>     
       );
     }

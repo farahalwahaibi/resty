@@ -5,13 +5,13 @@ import './main.scss';
 
 // create class for form
 class Form extends React.Component {
-    // constructor(props) {
-    //   super(props);
-    //   this.state = {
-    //     method: '',
-    //     url: ''
-    //   }
-    // }
+    constructor(props) {
+      super(props);
+      this.state = {
+        method: '',
+        url: ''
+      }
+    }
     //method for handling the url from input value
     handleUrl = e => {
       let url = e.target.value;
@@ -27,8 +27,8 @@ class Form extends React.Component {
     //method for handling the click button
     handleClick = async e => {
         e.preventDefault();
-        let raw = await fetch('https://swapi.dev/api/people');
-        let data = await raw.json();
+        let raw = await fetch(this.state.url);
+        let response = await raw.json();
         //get the headers
         let headers ={};
         raw.headers.forEach((val,idx)=>{
@@ -36,7 +36,8 @@ class Form extends React.Component {
         // console.log(headers);
         return headers;
         })
-        this.props.formHandler(headers,data);
+        //raw.headers.get('content-type')
+        this.props.formHandler(headers,response);
     }
 
     //method for render
@@ -44,7 +45,7 @@ class Form extends React.Component {
       return (
               <div className="App-form">
                   <form onSubmit={this.handleClick}>
-                      <input className="urlInput" onChange={this.handleUrl} value="https://swapi.dev/api/people" />
+                      <input className="urlInput" onChange={this.handleUrl} />
                       <br />
                       <br />
                       <input type="radio" name="btn" value="get" onChange={this.handleMethod} checked={true}/>
