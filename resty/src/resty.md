@@ -75,10 +75,16 @@ Application Flow:
 * Displays the response headers and results separately
 * Both headers and results should be “pretty printed” JSON
 
+### **PR URL :**
+
+* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/1)
+
+* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/2)
+
 
 ## **UML DIAGRAM PHASE-2**
 
-![UML](2.JPG)
+![UML](2.PNG)
 
 ***
 ***

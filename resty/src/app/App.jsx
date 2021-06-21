@@ -23,8 +23,8 @@ class App extends React.Component{
   handleForm = (headers,response)=>{
     // console.log(response,'response......');
     //calling the setState to update the state
-    this.setState({headers,response: response});
-    // console.log(this.state,'this.state');
+    this.setState({headers,response});
+    console.log(this.state,'this.state');
   }
   //render method
   render() {
@@ -33,7 +33,7 @@ class App extends React.Component{
         <div className="body">
           <Header/>
           <Form formHandler={this.handleForm}/>
-          <Result headers={this.state.headers} response={this.state.response}/>
+          <Result  response={this.state.response} headers={this.state.headers}/>
           <Footer/>
         </div>
       </React.Fragment>
