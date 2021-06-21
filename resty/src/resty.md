@@ -77,9 +77,9 @@ Application Flow:
 
 ### **PR URL :**
 
-* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/1)
+* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/3)
 
-* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/2)
+* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
 
 
 ## **UML DIAGRAM PHASE-2**
