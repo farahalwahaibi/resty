@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
 // import the header
-import Header from '../header/header';
+import Header from '../components/header/header';
 // import the main
-import Form from '../main/form';
+import Form from '../components/form/form';
 // import the result
-import Result from '../main/result';
+import Result from '../components/results/result';
 // import the footer
-import Footer from '../footer/footer';
+import Footer from '../components/footer/footer';
 
 // create class for app
 class App extends React.Component{

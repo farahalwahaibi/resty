@@ -1,6 +1,6 @@
 import React from 'react';
 // import the scss style for form
-import './main.scss';
+import './result.scss';
 //for rendering data 
 import ReactJson from 'react-json-view';
 
