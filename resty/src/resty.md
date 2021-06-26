@@ -92,6 +92,34 @@ Application Flow:
 
 ![UML](2.PNG)
 
+
+### **LAB - 29**
+
+### **PR URL :**
+
+* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/3)
+
+* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
+
+### **LAB - 30**
+
+### **PR URL :**
+
+* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/6)
+
+### **Installation**
+* **dependencies :**
+  *  "react-router-dom"
+ 
+
+
+## **UML DIAGRAM PHASE-2**
+
+![UML](2.PNG)
+
+
+
+
 ***
 ***
 ***
