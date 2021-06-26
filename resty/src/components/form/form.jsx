@@ -48,16 +48,16 @@ class Form extends React.Component {
           //save the data
           localStorage.setItem('savedItem',JSON.stringify([this.state]));
         }
-          else if (storedData){
-          storedData.forEach((val)=>{
-            if(val.url!==this.state.url && val.method!==this.state.method && val.body!==this.state.body){
-              console.log(this.state.url);
-              console.log(val.url);
-              storedData.push(this.state);
-              localStorage.setItem('savedItem',JSON.stringify(storedData));
-            }
-            else return ;
+          else {
+          const data = storedData.find((val)=>{
+            return((val.url === this.state.url) &&
+            (val.method === this.state.method)&&(val.body===this.state.body))
+            
           })
+          if(!data){
+            storedData.push(this.state);
+            localStorage.setItem('savedItem',JSON.stringify(storedData));
+          }
           
         }
         }

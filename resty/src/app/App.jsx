@@ -4,6 +4,8 @@ import './App.scss';
 import Header from '../components/header/header';
 // import the main
 import Form from '../components/form/form';
+// import the history
+import History from '../components/history/history';
 // import the result
 import Result from '../components/results/result';
 // import the footer
@@ -33,6 +35,7 @@ class App extends React.Component{
         <div className="body">
           <Header/>
           <Form formHandler={this.handleForm}/>
+          <History />
           <Result  response={this.state.response} headers={this.state.headers}/>
           <Footer/>
         </div>
