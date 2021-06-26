@@ -10,9 +10,9 @@ export default function History(props) {
     <div className='historyData' >
       {history.map((query) => {
         return (
-        
+            
           <li key={query.method + query.url}>
-            <span>{query.method}</span>
+            <span>{query.method}</span>&nbsp; &nbsp; &nbsp;
             <span>{query.url}</span>
           </li>
         
