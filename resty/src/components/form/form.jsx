@@ -1,7 +1,8 @@
 import React from 'react';
 // import the scss style for form
-import './main.scss';
-
+import './form.scss';
+//require superagent
+const superagent = require('superagent');
 
 // create class for form
 class Form extends React.Component {
@@ -9,7 +10,8 @@ class Form extends React.Component {
       super(props);
       this.state = {
         method: '',
-        url: ''
+        url: '',
+        body: {}
       }
     }
     //method for handling the url from input value
@@ -24,22 +26,47 @@ class Form extends React.Component {
       this.setState({method});
     }
 
+    //method for body
+    handleBody=e =>{
+      let body = e.target.value;
+      this.setState({body});
+    }
     //method for handling the click button
     handleClick = async e => {
         e.preventDefault();
-        let raw = await fetch(this.state.url);
-        let response = await raw.json();
-        //get the headers
-        let headers ={};
-        raw.headers.forEach((val,idx)=>{
-          headers[idx]=val;
-        // console.log(headers);
-        return headers;
-        })
-        //raw.headers.get('content-type')
-        this.props.formHandler(headers,response);
+
+        try{
+          let response = await superagent[this.state.method](this.state.url).send(this.state.body).set('Content-Type', 'application/json');
+          let headers = response.headers;
+          this.props.formHandler(headers,response.body );
+          //saved data in local storage 
+          //1st check if there is data in local storage
+          const storedData = JSON.parse(localStorage.getItem('savedItem'));
+          console.log(storedData);
+          //if not 
+          if (!storedData){
+          //save the data
+          localStorage.setItem('savedItem',JSON.stringify([this.state]));
+        }
+          else {
+          const data = storedData.find((val)=>{
+            return((val.url === this.state.url) &&
+            (val.method === this.state.method)&&(val.body===this.state.body))
+            
+          })
+          if(!data){
+            storedData.push(this.state);
+            localStorage.setItem('savedItem',JSON.stringify(storedData));
+          }
+          
+        }
+        }
+        catch(e){
+          console.log(e);
+        } 
     }
 
+     
     //method for render
     render() {
       return (
@@ -48,7 +75,7 @@ class Form extends React.Component {
                       <input className="urlInput" onChange={this.handleUrl} />
                       <br />
                       <br />
-                      <input type="radio" name="btn" value="get" onChange={this.handleMethod} checked={true}/>
+                      <input type="radio" name="btn" value="get" onChange={this.handleMethod} />
                       <label>GET</label> &nbsp; &nbsp;
                       <input type="radio" name="btn" value="post" onChange={this.handleMethod}/>
                       <label>POST</label> &nbsp; &nbsp;
@@ -56,6 +83,8 @@ class Form extends React.Component {
                       <label>PUT</label> &nbsp; &nbsp;
                       <input type="radio" name="btn" value="delete" onChange={this.handleMethod}/>
                       <label>DELETE</label>  &nbsp; &nbsp;
+                      <textarea name="" id="" cols="50" rows="4" onChange={this.handleBody}></textarea>
+                      &nbsp; &nbsp; &nbsp;
                       <button type="submit">GO!</button>
                   </form>
               </div>
