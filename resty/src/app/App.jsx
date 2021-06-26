@@ -47,11 +47,11 @@ class App extends React.Component{
             <br />
           <Form formHandler={this.handleForm}/>
           <Result  response={this.state.response} headers={this.state.headers}/>
-          <Footer/>
           </Route>
           <Route exact path="/history" component={History} />
           <Route  exact path="/help" component={Help} />
           </Switch>
+          <Footer/>
         </div>
       </React.Fragment>
       </Router>
