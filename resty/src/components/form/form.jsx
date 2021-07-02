@@ -1,8 +1,10 @@
 import React from 'react';
 // import the scss style for form
 import './form.scss';
+import Loading from '../loading/loading.jsx';
 //require superagent
 const superagent = require('superagent');
+
 
 // create class for form
 class Form extends React.Component {

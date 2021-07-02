@@ -1,0 +1,1 @@
+module.exports = "data:image/gif;base64,dmVyc2lvbiBodHRwczovL2dpdC1sZnMuZ2l0aHViLmNvbS9zcGVjL3YxCm9pZCBzaGEyNTY6NDU0MjQwY2Y2NzBiMTI3NjBiMjkyZTIxZTgzMWExYTAzNzJjYTliNDNhNjg0OTM5MmE0MTZjODAzYzcyZGYxOApzaXplIDcwNzM0Cg=="

@@ -79,8 +79,6 @@ Application Flow:
 
 * [PR LINK1](https://github.com/farahalwahaibi/resty/pull/3)
 
-* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
-
 
 ### **Installation**
 * **dependencies :**
@@ -88,7 +86,7 @@ Application Flow:
   *  "react-json-pretty"
 
 
-## **UML DIAGRAM PHASE-2**
+## **UML DIAGRAM PHASE-3**
 
 ![UML](2.PNG)
 
@@ -97,11 +95,9 @@ Application Flow:
 
 ### **PR URL :**
 
-* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/3)
-
 * [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
 
-### **LAB - 30**
+### **LAB - 31**
 
 ### **PR URL :**
 
