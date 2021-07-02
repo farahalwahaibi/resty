@@ -1,6 +1,12 @@
-## **Component Based UI**
+## **RESTy**
+
+### **Author: Farah AlWahaibi**
+
+***
 
 ### **LAB - 26**
+
+## **Component Based UI**
 
 #### **Phase 1 Requirements**
 
@@ -19,8 +25,6 @@ And as developers, here are the high level development tasks that address the ab
 * Create buttons that let the user choose from the REST methods (get, post, put, delete)
 * When the form is filled out, and the button is clicked, display the URL and the method chosen
 
-
-### **Author: Farah AlWahaibi**
 
 * [PR LINK1](https://github.com/farahalwahaibi/resty/pull/1)
 
@@ -53,9 +57,9 @@ And as developers, here are the high level development tasks that address the ab
 ***
 ***
 
-## **Props And State**
-
 ### **LAB - 27**
+
+## **Props And State**
 
 #### **Phase 2 Requirements**
 
@@ -79,6 +83,8 @@ Application Flow:
 
 * [PR LINK1](https://github.com/farahalwahaibi/resty/pull/3)
 
+* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
+
 
 ### **Installation**
 * **dependencies :**
@@ -86,18 +92,57 @@ Application Flow:
   *  "react-json-pretty"
 
 
-## **UML DIAGRAM PHASE-3**
+## **UML DIAGRAM PHASE-2**
 
 ![UML](2.PNG)
 
 
-### **LAB - 29**
+***
+***
+***
+
+### **LAB - 28**
+
+## **Component Composition**
+
+#### **Phase 3 Requirements**
+
+In this phase of the RESTy build, we will be adding some more fidelity to the application, including a menu, history, and an “in-progress” spinner.
+
+The following user stories detail the major functionality for this phase of the project.
+
+* As a user, I want to be able to use all REST methods so that I can do more than just get data
+* As a user, I want a simple list of all previous queries I’ve run so that I can easily see which queries I’ve run before
+* As a user, I want to click on an old query and have my selections appear in the form for me, so I don’t have to re-type them
+* As a user, I want to see a “loading” indicator while RESTy is fetching data so that I know it’s working on my request
 
 ### **PR URL :**
 
-* [PR LINK2](https://github.com/farahalwahaibi/resty/pull/4)
+* [PR LINK1](https://github.com/farahalwahaibi/resty/pull/6)
 
-### **LAB - 31**
+
+## **UML DIAGRAM PHASE-3**
+
+![UML](3.PNG)
+
+
+***
+***
+***
+
+
+### **LAB - 29**
+
+## **Routing**
+
+#### **Phase 4 Requirements**
+
+In this final phase of the RESTy build, we will be adding some more fidelity to the application, including a menu with a ore detailed view of our history, as well as an about us page.
+
+The following user stories detail the major functionality for this phase of the project.
+
+* As a user, I want to see all of my previous queries as a separate page so that I can browse them in greater detail
+* As a user, I would like to view a separate “Help” page so I can learn how the application works
 
 ### **PR URL :**
 
@@ -106,15 +151,10 @@ Application Flow:
 ### **Installation**
 * **dependencies :**
   *  "react-router-dom"
- 
 
+## **UML DIAGRAM PHASE-4**
 
-## **UML DIAGRAM PHASE-2**
-
-![UML](2.PNG)
-
-
-
+![UML](4.PNG)
 
 ***
 ***
